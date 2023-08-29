@@ -1,0 +1,27 @@
+
+module.exports = {
+    MISSING_FIELDS: "Fill all the fields",
+    ALREADY_EXISTS: "Already Exists",
+    EMAIL_ALREADY_REGISTERED: "Provided Email Already Registered",
+    CNIC_ALREADY_REGISTERED: "Provided CNIC Already Registered",
+    USERNAME_ALREADY_REGISTERED: "Provided Username Already Registered",
+    INVALID_INPUT: "Invalid input: missing field",
+    INVALID_EMAIL_OR_PASSWORD: "Invalid email or password",
+    USER_NOT_FOUND: "User not found",
+    POLL_NOT_FOUND: "Poll not found",
+    CANDIDATE_NOT_FOUND: "Candidate not found",
+    CONSTITUENCY_NOT_FOUND: "Constituency not found",
+    ELECTION_NOT_FOUND: "Election not found",
+    INTERNAL_SERVER_ERROR: "Internal Server Error",
+    ERROR_CALCULATING_RESULTS: "Error calculating results",
+    ERROR_FETCHING_RESULTS: "Error fetching results",
+    SUCCESS_MESSAGE : "Registered Successfully",
+    LOGIN_SUCCESS : "Login Successfully",
+    UNAUTHORIZED : "Unauthorzed Access",
+    APPROVED : "Approved Successfully",
+    POLL_ENDED : "Poll Ended Successfully",
+    INVITATION_SENT : "Invitation Send Successfully",
+    ADMIN_CONFIRMATION : "You are now Admin!",
+    VOTE_CASTED :"Vote Casted Successfully!",
+  };
+  

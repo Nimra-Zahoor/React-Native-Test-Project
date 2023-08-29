@@ -9,7 +9,7 @@ import styles from './style';
 const Login = () => {
   const navigation = useNavigation();
   const [selectedRole, setSelectedRole] = useState(null);
-
+  
   const handleLogin = () => {
     if (selectedRole === 'Admin') {
       navigation.navigate('AdminDashoard');
@@ -26,7 +26,7 @@ const Login = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Login</Text>
+      <Text style={styles.title}>Login X</Text>
       <View style={styles.container}>
         <RadioButton.Group style={styles.radioContainer} onValueChange={(value) => setSelectedRole(value)} value={selectedRole}>
           <RadioButton.Item style={styles.radioButton} label="Admin" value="Admin" />

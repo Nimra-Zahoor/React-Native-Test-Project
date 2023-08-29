@@ -4,6 +4,7 @@ import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './style';
 
 const Signup = () => {
+  console.log("Signup page console");
     const navigation = useNavigation();
         const handleRegisterPress = () =>{
             navigation.navigate('Signup')
