@@ -10,6 +10,7 @@ const {
 
 const scheduleElection = async (req, res) => {
   try {
+    console.log('working')
     if (req.userType !== USER_TYPES.ADMIN) {
       return res.status(401).json({
         message: UNAUTHORIZED,

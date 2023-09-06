@@ -8,7 +8,7 @@ const { cloudinaryConfig, mongoConfig } = require("./config/config.js");
 const cloudinary = require("cloudinary").v2;
 
 const routes = require("./router/index.js");
-const port = 5000;
+const port = 8000
 
 cloudinary.config(cloudinaryConfig);
 
@@ -22,12 +22,7 @@ mongoose
   });
 
 app.use(express.json());
-const allowedOrigins = ["http://localhost:3000"];
-app.use(
-  cors({
-    origin: ALLOWED_ORIGINS,
-  })
-);
+app.use( cors());
 
 app.use(
   session({
@@ -36,6 +31,10 @@ app.use(
     saveUninitialized: true,
   })
 );
+
+app.get("/", (req, res) => {
+  res.send(`Hello from server`);
+});
 
 app.use("/api",routes);
 

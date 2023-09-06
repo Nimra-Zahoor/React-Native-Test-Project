@@ -7,7 +7,7 @@ const {
 const authenticateUserByToken = require("../middleware/authenticate");
 
 router.post(
-  "/create-constituency",
+  "/create",
   authenticateUserByToken,
   createConstituency
 );

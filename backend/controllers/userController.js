@@ -10,6 +10,7 @@ const {
 
 const getAllUsersOtherThenAdmin = async (req, res) => {
   try {
+    console.log('Wokrkinggg');
     if (req.userType !== USER_TYPES.ADMIN) {
       return res.status(404).json({ message: UNAUTHORIZED });
     }
@@ -22,6 +23,7 @@ const getAllUsersOtherThenAdmin = async (req, res) => {
 
 const inviteUser = async (req, res) => {
   try {
+    console.log('Working');
     const userId = req.userId;
     const loggedInUser = await userService.findUserById(userId);
 

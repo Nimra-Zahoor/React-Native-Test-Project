@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   welcomeText: {
     padding: 20,
     fontSize: 28,
-    color: '#116A7B',
+    color: '#7286D3',
     fontWeight: '800',
     
   },

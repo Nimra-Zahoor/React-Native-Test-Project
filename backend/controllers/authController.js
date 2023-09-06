@@ -59,7 +59,7 @@ const signup = async (req, res) => {
 const login = async (req, res) => {
   try {
     const { email, password, userType } = req.body;
-
+    
     if (!email || !password || !userType) {
       return res.status(400).json({ message: Messages.MISSING_FIELDS });
     }
